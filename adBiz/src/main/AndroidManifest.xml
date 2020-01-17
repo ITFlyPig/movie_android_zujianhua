@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangyuelin.adbiz" >
+    <application>
+        <activity android:name=".activity.AdUnityActivity"
+           android:theme="@style/Transparent"/>
+        <activity android:name=".activity.GoogleAdActivity"/>
+
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!--   这里填入用户申请的谷歌的广告id     -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+    </application>
+</manifest>

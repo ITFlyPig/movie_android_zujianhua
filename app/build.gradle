@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin: 'app-joint'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    defaultConfig {
+        applicationId "io.github.prototypez.appjoint.app"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    signingConfigs {
+        demo {
+            storeFile file("demo.jks")
+            storePassword "demo123"
+            keyAlias "demo"
+            keyPassword "demo123"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.demo
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(":router")
+    implementation project(":module1")
+    implementation project(":module2")
+    implementation project(":commons")
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    implementation project(path: ':netTech') //注解处理器，生成RxHttp类
+
+
+}

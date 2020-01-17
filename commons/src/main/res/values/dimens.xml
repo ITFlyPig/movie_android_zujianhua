@@ -1,0 +1,22 @@
+<resources>
+    <!--    4个挡位的超大号文字-->
+    <dimen name="very_large_1_sp">34sp</dimen>
+    <dimen name="very_large_2_sp">45sp</dimen>
+    <dimen name="very_large_3_sp">56sp</dimen>
+    <dimen name="very_large_4_sp">112sp</dimen>
+
+    <!--    12  14  16   18  20-->
+
+    <!--    大标题的文字大小-->
+    <dimen name="large_title_text">20sp</dimen>
+    <!--    标题文字-->
+    <dimen name="title_text">18sp</dimen>
+    <!--    副标题-->
+    <dimen name="sub_title_text">14sp</dimen>
+    <!--    正文-->
+    <dimen name="normal_text">16sp</dimen>
+    <!--    按钮-->
+    <dimen name="btn_text">16sp</dimen>
+    <!--    提示文字-->
+    <dimen name="tip_text">12sp</dimen>
+</resources>

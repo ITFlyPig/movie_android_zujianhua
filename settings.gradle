@@ -1,0 +1,18 @@
+include ':core', ':subBiz', ':uImageLoaderTech', ':uiCom', ':netTech', ':baseBiz'
+include ':plugin'
+
+include ':app'
+include ':module1'
+include ':module2'
+include ':router'
+include ':commons'
+include ':adBiz'
+
+include ':standalone:module1Standalone'
+include ':standalone:module2Standalone'
+include ':standalone:adBizStandalone'
+include ':aars:unityAds'
+include ':libraries:NativeTemplatesAndroid-1.0.0'
+
+//include ':monkey'
+//include ':tiger'

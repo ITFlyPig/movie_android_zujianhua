@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <!--  正文/标题 颜色-->
+    <color name="text_normal">#333333</color>
+    <!--  副标题、副文  颜色-->
+    <color name="text_sub_title">#666666</color>
+    <!--  提示文案颜色-->
+    <color name="text_tip">#999999</color>
+    <!--  背景-->
+    <color name="bg">#EEEEEE</color>
+    <!--  分割线-->
+    <color name="divider">#E5E5E5</color>
+    <!--  深色分割线-->
+    <color name="divider_deep">#CCCCCC</color>
+</resources>
